@@ -9,7 +9,7 @@
     "patterns": [
         {
             "name": "meta.embedded.sql",
-            "begin": "\\s*((?i)(select|insert into|delete|update|create table|create index|create database|create view|create trigger|create function|create procedure|create schema|drop table|drop database|drop view|drop trigger|drop function|drop procedure|drop schema|alter table|alter view|alter trigger|alter function|alter procedure|alter schema|alter sequence|truncate|with|create or replace)(?=\\s))|(--\\w+)",
+            "begin": "\\s*((?i)(select|insert into|delete|update|create table|create index|create database|create view|create trigger|create function|create procedure|create schema|drop table|drop database|drop view|drop trigger|drop function|drop procedure|drop schema|alter table|alter view|alter trigger|alter function|alter procedure|alter schema|alter sequence|truncate|with|create or replace|where)(?=\\s))|(--\\w+)",
             "end": "(?=`)",
             "beginCaptures": {
                 "2": {
