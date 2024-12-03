@@ -2,7 +2,7 @@
     "name": "inline-sql-syntax",
     "displayName": "Inline SQL",
     "description": "Highlight and lint SQL strings and SQL files. Python, Go, Rust, JS, TS, Ruby, Java, C#, PHP, Lua.",
-    "version": "2.16.0",
+    "version": "2.16.6",
     "author": "Eric Jardas <givemeurhats@gmail.com>",
     "publisher": "givemeurhats",
     "license": "MIT",
@@ -50,7 +50,7 @@
         "lint": "npx prettier --check ./src",
         "watch": "tsc -watch -p ./",
         "build": "npx vsce package",
-        "install-extension": "tsc -p ./ && tsc -p ./ && npx vsce package && code --install-extension inline-sql-syntax-2.16.0.vsix"
+        "install-extension": "tsc -p ./ && tsc -p ./ && npx vsce package && code --install-extension inline-sql-syntax-2.16.6.vsix"
     },
     "contributes": {
         "grammars": [

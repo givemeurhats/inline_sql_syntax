@@ -1,5 +1,5 @@
 string query = @"--sql
-    select * FROM book WHERE id = 34;";
+    select * FROM book WHERE id = 34"
 
 string another = @"--sql
 	select * from book

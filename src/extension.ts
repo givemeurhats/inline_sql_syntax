@@ -1,5 +1,5 @@
-import * as vscode from 'vscode';
 import sqlLint from 'sql-lint';
+import * as vscode from 'vscode';
 import * as configuration from './configuration';
 
 export const PHP_SQL = '<<<SQL';
@@ -12,7 +12,8 @@ async function checkRange(
 ): Promise<vscode.Diagnostic[]> {
     const diagnostics: vscode.Diagnostic[] = [];
 
-    const sqlStr = doc.getText(range);
+    const sql = doc.getText(range);
+    const sqlStr = sql.trim().endsWith(';') ? sql : sql + ';';
 
     let errors = null;
     log.appendLine(`linting sql: ${sqlStr}`);

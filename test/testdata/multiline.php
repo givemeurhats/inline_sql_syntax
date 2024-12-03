@@ -1,4 +1,8 @@
 $query = <<<SQL
+    SELECT * FROM book WHERE FOO.bar = '1'
+SQL;
+
+$query2 = <<<SQL
     SELECT * FROM book WHERE FOO.bar = '1';
 SQL;
 

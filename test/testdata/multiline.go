@@ -4,7 +4,7 @@ func main() {
 	// On live DB error should be:
 	// [error] relation "book" does not exist
 	query := `--sql
-select * from book where id = 34;
+select * from book where id = 34
 `
 
 	another := `--sql
