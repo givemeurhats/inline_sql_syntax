@@ -3,8 +3,8 @@
     "displayName": "Inline SQL",
     "description": "Highlight and lint SQL strings and SQL files. Python, Go, Rust, JS, TS, Ruby, Java, C#, PHP, Lua.",
     "version": "2.16.0",
-    "author": "qufiwefefwoyn <qufiwefefwoyn@gmail.com>",
-    "publisher": "qufiwefefwoyn",
+    "author": "Eric Jardas <givemeurhats@gmail.com>",
+    "publisher": "givemeurhats",
     "license": "MIT",
     "icon": "assets/logo.png",
     "repository": {
@@ -12,7 +12,7 @@
     },
     "homepage": "https://github.com/barklan/inline_sql_syntax",
     "engines": {
-        "vscode": "^1.63.0"
+        "vscode": "^1.88.0"
     },
     "categories": [
         "Linters",
@@ -48,7 +48,9 @@
         "test-compile": "tsc -p ./",
         "compile": "tsc -p ./",
         "lint": "npx prettier --check ./src",
-        "watch": "tsc -watch -p ./"
+        "watch": "tsc -watch -p ./",
+        "build": "npx vsce package",
+        "install-extension": "tsc -p ./ && tsc -p ./ && npx vsce package && code --install-extension inline-sql-syntax-2.16.0.vsix"
     },
     "contributes": {
         "grammars": [
@@ -181,7 +183,7 @@
         "typescript": "^4.6.2"
     },
     "dependencies": {
-        "sql-lint": "^0.0.19"
+        "sql-lint": "^1.0.0"
     },
     "__metadata": {
         "id": "4d32ffbd-a404-4f22-9022-38a9e83e55f1",
